@@ -8,13 +8,20 @@ namespace SwedishValidation.Tests.BeAValid
         [TestMethod]
         public void IsValid()
         {
-            Assert.IsTrue(SwedishValidation.BeAValid.SocialSecurityNumber("771016-9584"));
+            Assert.IsTrue(SwedishValidation.BeAValid.SocialSecurityNumber("750231-0241"));
+            Assert.IsTrue(SwedishValidation.BeAValid.SocialSecurityNumber("881014-6616"));
+            Assert.IsTrue(SwedishValidation.BeAValid.SocialSecurityNumber("881014+6616"));
         }
 
         [TestMethod]
         public void IsInvalid()
         {
-            Assert.IsTrue(SwedishValidation.BeAValid.SocialSecurityNumber("771016-a9584"));
+            Assert.IsFalse(SwedishValidation.BeAValid.SocialSecurityNumber("771016-a9584"));
+            Assert.IsFalse(SwedishValidation.BeAValid.SocialSecurityNumber("881014*6616"));
+            Assert.IsFalse(SwedishValidation.BeAValid.SocialSecurityNumber("881a014*6616"));
+            Assert.IsFalse(SwedishValidation.BeAValid.SocialSecurityNumber("881a014*6616"));
+            Assert.IsFalse(SwedishValidation.BeAValid.SocialSecurityNumber("881014+661"));
+            Assert.IsFalse(SwedishValidation.BeAValid.SocialSecurityNumber("881014-661"));
         } 
     }
 }
