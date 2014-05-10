@@ -53,10 +53,13 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="MobilePhoneNumber.cs" />
+    <Compile Include="BeAValid\MobilePhoneNumber.cs" />
+    <Compile Include="FormatThis\MobilePhoneNumber.cs" />
+    <Compile Include="FormatThis\PhoneNumber.cs" />
+    <Compile Include="FormatThis\SocialSecurityNumber.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SocialSecurityNumber.cs" />
-    <Compile Include="PhoneNumber.cs" />
+    <Compile Include="BeAValid\SocialSecurityNumber.cs" />
+    <Compile Include="BeAValid\PhoneNumber.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SwedishValidation\SwedishValidation.csproj">

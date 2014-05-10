@@ -1,6 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace SwedishValidation.Tests
+namespace SwedishValidation.Tests.FormatThis
 {
     [TestClass]
     public class SocialSecurityNumber
@@ -8,13 +8,13 @@ namespace SwedishValidation.Tests
         [TestMethod]
         public void IsValid()
         {
-            Assert.IsTrue(BeAValid.SocialSecurityNumber("771016-9584"));
+            Assert.AreEqual(string.Empty, SwedishValidation.FormatThis.SocialSecurityNumber("771016-9584"));
         }
 
         [TestMethod]
         public void IsInvalid()
         {
-            Assert.IsTrue(BeAValid.SocialSecurityNumber("771016-a9584"));
+            Assert.AreEqual(string.Empty, SwedishValidation.FormatThis.SocialSecurityNumber("771016-a9584"));
         } 
     }
 }
