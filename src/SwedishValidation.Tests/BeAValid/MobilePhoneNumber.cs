@@ -8,13 +8,13 @@ namespace SwedishValidation.Tests.BeAValid
         [TestMethod]
         public void IsValid()
         {
-            Assert.IsTrue(SwedishValidation.BeAValid.MobilePhoneNumber("070-1231233"));
+            Assert.IsTrue(SwedishValidation.BeAValid.MobilePhoneNumber("073-614 82 85"));
         }
 
         [TestMethod]
         public void IsInvalid()
         {
-            Assert.IsTrue(SwedishValidation.BeAValid.MobilePhoneNumber("070-a''1231233"));
+            Assert.IsFalse(SwedishValidation.BeAValid.MobilePhoneNumber("073-a14 82 85"));
         }
     }
 }
