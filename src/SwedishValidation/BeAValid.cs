@@ -8,7 +8,7 @@ namespace SwedishValidation
     {
         public static bool PhoneNumber(string phoneNumber)
         {
-            return Regex.IsMatch(phoneNumber, ValidationRegEx.PhoneNumber);
+            return Regex.IsMatch(phoneNumber.Replace("-", "").Replace(" ", ""), ValidationRegEx.PhoneNumber);
         }
 
         public static bool MobilePhoneNumber(string mobilePhoneNumber)

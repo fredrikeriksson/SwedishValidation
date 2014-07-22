@@ -1,6 +1,6 @@
 SwedishValidation
 =================
 
-A validation library for common swedish numbers e.g. phone number and social security number.
+A validation library for common swedish things as phone numbers and social security numbers.
 
 This library is currently in early alpha mode.

@@ -7,12 +7,12 @@
             return string.Empty;
         }
 
-        public static string PhoneNumber(string mobilePhoneNumber)
+        public static string PhoneNumber(string phoneNumber)
         {
             return string.Empty;
         }
 
-        public static string SocialSecurityNumber(string mobilePhoneNumber)
+        public static string SocialSecurityNumber(string socialSecurityNumber)
         {
             return string.Empty;
         }
